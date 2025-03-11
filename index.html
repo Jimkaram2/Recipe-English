@@ -9,62 +9,81 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fcf8f3;
+            background-color: #f4f4f4;
             color: #333;
         }
         .container {
-            width: 90%;
+            width: 85%;
             max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
+            margin: 40px auto;
+            padding: 30px;
             background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            border-radius: 12px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+            font-size: 1.1em;
         }
         header {
             text-align: center;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             color: #b5651d;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         h2 {
+            font-size: 2.5em;
             color: #b5651d;
             border-bottom: 3px solid #e0e0e0;
-            padding-bottom: 8px;
-            font-size: 2em;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
         p, li {
-            line-height: 1.8;
+            line-height: 1.7;
             font-size: 1.1em;
         }
         ul, ol {
-            margin-left: 25px;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-left: 20px;
         }
         .ingredients, .instructions {
             background-color: #fff3e0;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
         }
         .ingredients ul, .instructions ol {
-            padding-left: 20px;
+            padding-left: 25px;
         }
         footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
+            margin-top: 50px;
+            font-size: 1em;
             color: #888;
+            border-top: 2px solid #e0e0e0;
+            padding-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+       
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
         }
     </style>
 </head>
@@ -72,12 +91,12 @@
     <div class="container">
         <header>
             <h1>Yiayia's Traditional Greek Pastitsio</h1>
-            <img src="https://raw.githubusercontent.com/Jimkaram2/Recipe-English/main/pastitsio-29-9-22-site.jpg" alt="Finished Pastitsio Dish">
+            <img src="https://raw.githubusercontent.com/Jimkaram2/Recipe-English/main/pastitsio-29-9-22-site.jpg" alt="Yiayia's Traditional Greek Pastitsio">
         </header>
 
         <section>
             <h2>Personal Connection</h2>
-            <p>Every time I return to Greece with my family, there is one tradition that never changes, sitting around my grandmother's table to enjoy her homemade pastitsio. The warm, comforting aroma of cinnamon and béchamel fills her home, welcoming us back in a way that words cannot. This dish isn't just food; it's a symbol of home, heritage, and love. Watching my Yiayia cook, hearing her stories, and sharing the meal together are moments that make me feel deeply connected to my roots.</p>
+            <p>Every time I return to Greece with my family, there is one tradition that never changes: sitting around my grandmother's table to enjoy her homemade pastitsio. The warm, comforting aroma of cinnamon and béchamel fills her home, welcoming us back in a way that words cannot express. This dish isn’t just food; it's a symbol of home, heritage, and love. Watching my Yiayia cook, hearing her stories, and sharing the meal together are moments that make me feel deeply connected to my roots.</p>
             <p>Eating pastitsio is reliving memories of laughter-filled evenings, bonding with family, and embracing our Greek culture. The dish reminds me of my identity and symbolizes my resilience in maintaining tradition. Whenever I take a bite, I’m reminded of the strength and love that shape my family, and it inspires me to cherish these moments and carry them forward.</p>
         </section>
 
@@ -122,17 +141,42 @@
         <section class="instructions">
             <h2>Instructions</h2>
             <ol>
-                <li>Prepare the meat sauce by sautéing onion and garlic, adding beef, and simmering with wine, tomatoes, and spices.</li>
-                <li>Cook pasta, then combine with butter, eggs, and half of the cheese.</li>
-                <li>Make the béchamel by whisking butter and flour, gradually adding milk, seasoning, and finishing with eggs.</li>
-                <li>Layer half the pasta, the meat sauce, remaining pasta, and top with béchamel and cheese.</li>
-                <li>Bake at 180°C (350°F) for 45-50 minutes until golden brown.</li>
-                <li>Rest for 15 minutes before serving.</li>
+                <h3>For the Ground Meat:</h3>
+                <li>Heat a pan over medium-high heat and add the olive oil.</li>
+                <li>Sauté the onions for 3-4 minutes until soft and translucent.</li>
+                <li>Add the garlic and sauté for an additional minute.</li>
+                <li>Add the tomato paste, sauté for 2 minutes to intensify the flavor.</li>
+                <li>Incorporate the ground beef and brown it, about 4-5 minutes.</li>
+                <li>Deglaze with red wine and allow the alcohol to evaporate.</li>
+                <li>Stir in the crushed tomatoes, cinnamon, cloves, salt, and pepper.</li>
+                <li>Simmer on low heat for 15-20 minutes, until the sauce reduces.</li>
+                <li>Remove from heat and discard the bay leaves.</li>
+            </ol>
+            <ol>
+                <h3>For the Béchamel Sauce:</h3>
+                <li>Melt the butter in a pot over medium heat, then add the flour and whisk continuously.</li>
+                <li>Add warm milk gradually, whisking constantly to avoid lumps.</li>
+                <li>Continue to whisk until the mixture thickens into a smooth, creamy sauce.</li>
+                <li>Remove from heat and season with salt, pepper, and nutmeg.</li>
+                <li>Stir in the beaten eggs until well incorporated, then set aside.</li>
+            </ol>
+            <ol>
+                <h3>For the Pasta:</h3>
+                <li>Cook the pasta in salted water until just al dente, about 1-2 minutes less than package instructions.</li>
+                <li>Drain and set aside. Brush a baking dish with olive oil.</li>
+                <li>Mix the pasta with the eggs, herbs, and cheese, then spread evenly in the prepared dish.</li>
+            </ol>
+            <ol>
+                <h3>To Assemble:</h3>
+                <li>Preheat the oven to 180°C (350°F) fan-forced.</li>
+                <li>Layer the ground meat sauce over the pasta.</li>
+                <li>Top with the béchamel sauce and sprinkle with grated cheese.</li>
+                <li>Bake for 40 minutes until golden brown on top.</li>
             </ol>
         </section>
 
         <footer>
-             <p>&copy; 2025 Jim's English 12 Assignment. All rights reserved.</p>
+            <p>&copy; 2025 Jim's English 12 Assignment. All rights reserved.</p>
         </footer>
     </div>
 </body>
